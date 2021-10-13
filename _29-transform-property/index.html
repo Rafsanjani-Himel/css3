@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        /*transform: scale(1.3); it is used to make biger.*/
+        #div1{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 200px;   
+        }
+        
+        #div1:hover{
+            /*transform: scale(1.3);*/
+            transform: scale(2);
+            cursor: pointer;
+            transition: all .3s linear;
+        }
+
+
+        /*transform: rotate(45deg); used to rotate */
+        #div2{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+
+        #div2:hover{
+            transform: rotate(360deg);
+           /* transform: rotate(-360deg);*/
+            cursor: pointer;
+            transition: all 4s linear;
+        }
+
+        /*skew is used to show 3d*/
+        #div3{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+        #div3:hover{
+            
+            transform: skew(-50deg);
+            cursor: pointer;
+            transition: all .3s linear;
+        }
+        	/*translate x,y means it new location*/
+        #div4{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 200px; 
+        }
+        #div4:hover{
+            transform: translate(123px,-140px);
+            cursor: pointer;
+            transition: all 1s linear;
+        }
+
+        /*multiple property*/
+        #div5{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 200px; 
+            text-align: center;
+            
+        }
+        #div5:hover{
+            transform: scale(2) rotate(360deg) skew(-45deg);
+            cursor: pointer;
+            transition:  2s ;
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="div1"><h2>Bangladesh</h2></div>
+    <div id="div2"><h2>Bangladesh</h2></div>
+    <div id="div3"><h2>Bangladesh</h2></div>
+    <div id="div4"></div>
+    <div id="div5"><h3>Rafsanjani</h3></div>
+	
+
+
+</body>
+</html>
